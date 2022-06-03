@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="py-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xbox one</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        footer{
+           margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="navcabe">
+                <p id="melhorloja">A melhor loja da Uni9</p>
+            </div>
+            <div id="linha2"></div>
+            <div id="cabeca"><a href="index.html" class="cabe" id="tech">9Tech</a> <img src="menu-regular-24 (2).png" alt="" class="cabe" id="menu" onclick="menu()">  <input type="text" placeholder="Pesquisar item" class="cabe" id="pesquisa" onclick="pesq()"> <a href="#" class="cabe">Baixe o app</a><a href="login.html" class="cabe">Conta</a> <a href="#"><img src="cart-solid-24.png" alt="" id="cart" onclick="fechar()"></a></div>
+        </nav>
+        <div class="links">
+            <a href="#" class="linkk">Mais vendidos</a>
+            <a href="#" class="linkk">Ofertas especiasis</a>
+            <a href="#" class="linkk">Seja membro 9tech</a>
+            <a href="#" class="linkk">Contate-nos</a>
+        </div>
+        <div class="carrinhoitem">
+            <a href="#" class="clink">Meu carrinho</a>
+            <a href="#" class="clink">meus pedidos</a>
+        </div>
+    </header>
+     <main class="mainprodutos">
+         <div id="mainbox">
+             <div class="fotodoproduto">
+                <img src="xboxOne.png" alt="xbox" class="xbox">
+             </div>
+             <div class="fotodoproduto">
+                
+
+             </div>
+             <div id="infoprodutos">
+                 <h2 class="tituloprodutos">Console Xbox One Fat 500GB + Kinect + Controle Original preto</h2>
+            </div>
+            <hr class="linhavenda">
+            <div class="precoantes">
+                <h3 class="depor">De R$3.000,00 por:</h3>
+            </div>
+            <div class="valoresvenda">
+                <h1 class="precosvenda">R2.399,00</h1>
+            </div>
+            <div class="iconecartao">
+                <img src="cartao.png" alt="" class="cartaoimg">
+            </div>
+            <div class="iconecarteira">
+                <img src="carteira.png" alt="" class="carteira">
+            </div>
+            <div class="iconepix">
+                <img src="pix.png" alt="" class="pix">
+            </div>
+            <div class="parcelavenda">
+                <p class="vendax">10X sem juros no cartão de crédito</p>
+            </div>
+            <hr class="linhavenda2">
+            <div id="setaesquerda" onclick="setaesquerdaxbox()">
+                <img src="setaesquerda.png" alt="" id="esquerdaseta">
+            </div>
+            <div id="setadireita" onclick="setadireitaxbox()">
+                <img src="setadireita.png" alt="" id="direitaseta">
+            </div>
+
+
+         </div>
+         <div class="formasparcelas">
+             <ul>
+                 <li>1X R$2.399,00</li>
+                 <li>2X R$1.199,00</li>
+                 <li>5X R$479,00</li>
+                 <li>10X R$339,00</li>
+             </ul>
+         </div>
+
+         <div class="botaocomprar" onclick="comprar()">
+             <h2 class="textocomprar">COMPRAR PRODUTO</h2>
+             <h3 class="h3comprar">Colocar no carrinho</h3>
+         </div>
+     </main>
+     <div class="carrinho">
+        <div class="centro">
+            <h3 class="infojs"></h3>
+            <h4 class="de"></h4>
+            <h3 class="precocarrinho"></h3>
+        </div>
+        <a href="pag_compra.html"><div class="botaocarrinho">
+            <h2 id="ir">Ir para pagamento</h2>
+        </div></a>
+        <div class="qnt">
+            <p id="quantidade">1</p>
+            <img src="menos.png" alt="" id="menos" onclick="menos()">
+            <img src="simbolo-de-mais.png" alt="" id="mais" onclick="mais()">
+        </div>
+    </div>
+
+     <footer>
+        <div id="formasdepagamento">
+            <p class="footer">FORMAS DE PAGAMENTO</p>
+            <img src="formas pagamento.webp" alt="formas de pagamento">
+        </div>
+
+        <div id="imagensfooter">
+            <img src="ra.webp" alt="ra" class="imgfooter">
+            <img src="compre-confie.webp" alt="compre-confie" class="imgfooter">
+            <img src="google-site-seguro.webp" alt="google-site-seguro" class="imgfooter">
+        </div>
+        <hr id="linhafooter">
+
+        <div id="infosfooter">
+            <h1  class="info">9Tech</h1>
+            <p class="info">9TECH ATACADO E VAREJO DE PRODUTOS DE INFORMATICA LTDA
+                CNPJ: 00.000.000/0000-00 | São Paulo - SP
+                ATENDIMENTO
+                De segunda a sexta das 8:30 às 12H / 13H às 18H
+                SOMOS E-COMMERCE - NÃO TEMOS ATENDIMENTO LOCAL</p>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

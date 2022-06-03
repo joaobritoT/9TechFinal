@@ -1,0 +1,763 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+body{
+    background-color: #ebebeb;
+    
+}
+
+.cabe{
+    margin-left: 50px;
+}
+a.cabe{
+    color: black;
+    text-decoration: none;
+    font-family: 'Righteous';
+    font-size: 20px;
+}
+
+#tech{
+    font-size: 40px;
+}
+
+#menu{
+    height: 30px;
+    cursor: pointer;
+}
+
+#pesquisa{
+    width: 350px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    
+}
+.pesquisa{
+    width: 350px;
+    height: 20px;
+}
+
+nav{
+  background-color: orange;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 60px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  height: 75px;
+  
+  
+
+}
+#banner{
+    margin-top: 30px;
+}
+
+
+.banner{
+    width: 1500px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 0.4em black;
+    cursor: pointer;
+}
+
+.titulos{
+    font-family: 'Oswald', sans-serif;
+    margin-top: 60px;
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+
+.produtos{
+    background-color: white;
+    margin-left: 60px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+    display: inline-block;
+}
+
+.imagens{
+    width: 300px;
+
+}
+
+#margem{
+    margin-left: 370px;
+}
+
+.nomeproduto{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.preco{
+    font-family: 'Righteous';
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.promo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    margin-bottom: -25px;
+}
+
+.promo2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    margin-top: -25px;
+}
+
+.linha{
+    background-color: lightgray;
+    width: 340px;
+    height: 1px;
+    margin-left: -20px;
+    margin-right: -30px;
+}
+
+.produtos:hover{
+        -webkit-transform: scale(0.2);
+        -ms-transform: scale(0.3);
+        transform: scale(1.1);
+        box-shadow: 0 0 0.5em black;
+}
+
+#pc{
+    width: 215px;
+    margin-left: 40px;
+}
+
+#xbox{
+    width: 300px;
+    height: 214px;
+}
+
+#margem2{
+    margin-left: 370px;
+}
+
+#margem3{
+    margin-left: 370px;
+}
+
+#ram{
+    width: 300px;
+    height: 300px;
+}
+
+#ssd{
+    width: 300px;
+}
+
+#rtx{
+    width: 300px;
+    height: 268px;
+}
+
+.ofertas{
+    background-color: white;
+    margin-left: 60px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+    display: inline-block;
+}
+
+#mouse{
+    width: 300px;
+    height: 335px;
+}
+
+#galaxy{
+    width: 300px;
+    height: 335px;
+}
+
+#headset{
+    height: 304px;
+}
+
+#margem4{
+    margin-left: 150px;
+}
+
+.ofertas:hover{
+    -webkit-transform: scale(0.2);
+        -ms-transform: scale(0.3);
+        transform: scale(1.1);
+        box-shadow: 0 0 0.5em black;
+}
+
+footer{
+    height: 450px;
+    background-color: #212121;;
+    margin-top: 50px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+    margin-right: -10px;
+    padding: 5px;
+}
+
+.precopromo{
+    font-family: 'Righteous';
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#cart{
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 30px;
+    
+
+}
+
+
+#linha2{
+    background-color: black;
+    width: 1918px;
+    height: 2px;
+    margin-left: -20px;
+    margin-right: -30px;
+    margin-top: 20px;
+}
+
+#melhorloja{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#cabeca{
+    margin-top: -35px;
+}
+
+
+.links{
+    display: none;
+    
+}
+
+.showlinks{
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 190px;
+    height: 200px;
+    padding-left: 0%;
+    text-align: center;
+    margin-left: 240px;
+    margin-top: -25px;
+    border-radius: 5px 50px 30px 50px;
+    box-shadow: 0 0 1em black;
+    animation: go-back 0.3s;
+    
+}
+
+.linkk{
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Paytone One';
+    
+    
+}
+
+.linkk:hover{
+    text-decoration: underline;
+}
+
+.carrinhoitem{
+    display: none;
+    position: absolute;
+}
+
+.carrinhoaparecer{
+    display: block;
+    background-color: white;
+    width: 190px;
+    height: 100px;
+    margin-left: 1060px;
+    border-radius: 5px 50px 30px 50px;
+    margin-top: -25px;
+    box-shadow: 0 0 1em black;
+    animation: go-back 0.3s;
+}
+
+.clink{
+    display: block;
+    color: black;
+    font-family: 'Paytone One';
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.clink:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#imagensfooter{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 25px;
+}
+
+#formasdepagamento{
+    position: absolute;
+    margin-left: 42%;
+    text-align: center;
+}
+
+.imgfooter{
+    margin-left: 10px;
+}
+
+#infosfooter{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 28px;
+}
+
+.info{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+#linhafooter{
+    position: absolute;
+    width: 1900px;
+    margin-top: 160px;
+}
+
+.mainprodutos{
+    background-color: white;
+    width: 1500px;
+    height: 700px;
+    margin-top: 40px;
+    margin-left: 200px;
+    box-shadow: 3px 3px 15px;
+}
+
+.ps5-1{
+    width: 600px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+#infoprodutos{
+    position: absolute;
+    width: 500px;
+    margin-left: 800px;
+    margin-top: 30px;
+}
+
+.tituloprodutos{
+    color: darkorange;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.valoresvenda{
+    position: absolute;
+    width: 200px;
+    margin-top: 280px;
+    margin-left: 800px;
+
+
+}
+
+.precosvenda{
+    color: green;
+    font-family: 'Righteous';
+    font-size: 50px;
+    
+}
+
+.precoantes{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 268px;
+}
+
+.depor{
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.linhavenda{
+    position: absolute;
+    width: 499px;
+    margin-top: 250px;
+    margin-left: 800px;
+}
+
+.iconecartao{
+    position: absolute;
+
+    width: 25px;
+    margin-top: 380px;
+    margin-left: 800px;
+}
+
+.cartaoimg{
+    width: 40px;
+}
+
+.parcelavenda{
+    position: absolute;
+    width: 250px;
+    margin-left: 845px;
+    margin-top: 376px;
+}
+
+.vendax{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iconecarteira{
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 800px;
+}
+
+.carteira{
+    width: 40px;
+}
+
+.iconepix{
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 843px;
+}
+
+.pix{
+    width: 40px;
+}
+
+.linhavenda2{
+    color: black;
+    position: absolute;
+    width: 499px;
+    margin-top: 500px;
+    margin-left: 800px;
+}
+
+.formasparcelas{
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 760px;
+   
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-top: 4px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.botaocomprar{
+    position: absolute;
+    background-color: green;
+    width: 280px;
+    height: 100px;
+    margin-top: 530px;
+    margin-left: 1020px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+.textocomprar{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.h3comprar{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -14px;
+    text-align: center;
+}
+
+.botaocomprar:hover{
+    background-color: rgb(80, 247, 80);
+}
+
+#setaesquerda{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 40px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#setadireita{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 655px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#esquerdaseta{
+    width: 50px;
+}
+
+#direitaseta{
+    width: 50px;
+}
+
+a{
+    color: black;
+}
+
+.pcgamer{
+    width: 600px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.xbox{
+    width: 600px;
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 80px;
+}
+
+
+.motog{
+    width: 600px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.iphonexr{
+    width: 600px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.iphone13{
+    width: 600px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.ram{
+    width: 600px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 80px;
+}
+
+.ssd{
+    width: 600px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.rtx{
+    width: 600px;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 80px;
+}
+
+.tecladovenda{
+    width: 600px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.mousevenda{
+    width: 600px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.s20venda{
+    width: 500px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 132px;
+}
+
+.h7venda{
+    width: 600px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.xiaomi{
+    width: 600px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.celmenor{
+    width: 500px;
+    position: absolute;
+    margin-left: 140px;
+}
+
+.mousemenor{
+    width: 450px;
+    position: absolute;
+    margin-left: 170px ;
+
+}
+
+.carrinho{
+    display: none;
+    position: absolute;
+    background-color: white;
+    margin-top: -770px;
+    margin-left: 1050px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 1em black;
+    animation: go-back 0.3s;
+    border-radius: 5px 50px 30px 50px;
+}
+
+.carrinhocomprar{
+    display: block;
+}
+
+.centro{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.infojs{
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    margin-top: -10px;
+}
+
+.de{
+    position: absolute;
+    margin-top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.precocarrinho{
+    position: absolute;
+    margin-top: 135px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    font-size: 23px;
+}
+
+.botaocarrinho{
+    position: absolute;
+    background-color: orange;
+    height: 40px;
+    margin-top: 200px;
+    padding: 5px;
+    margin-left: 40px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s
+}
+
+#ir{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4px
+
+    
+}
+
+.botaocarrinho:hover{
+    background-color: rgba(255, 166, 0, 0.397);
+}
+
+.qnt{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 210px;
+    margin-top: 130px;
+    height: 10px;
+}
+
+#menos{
+    position: absolute;
+    width: 20px;
+    margin-left: -30px;
+    margin-top: -34px;
+}
+
+#mais{
+    position: absolute;
+    width: 20px;
+    margin-top: -34px;
+    margin-left: 15px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+

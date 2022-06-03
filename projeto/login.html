@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Righteous&display=swap');
+        body{
+            background-color: lightgrey;
+        }
+        
+        
+        #div1{
+            background-color: orange;
+            height: 600px;
+            width: 500px;
+            display: inline-block;
+            margin-left: 240px;
+            padding: 10.5px;
+            margin-top: 30px;
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px ;
+            
+            
+            
+        }
+
+        #div2{
+            background-color: white;
+            height: 600px;
+            width: 900px;
+            display: inline-block;
+            margin-top: 90px;
+            padding: 20px;
+            padding-bottom: 2px;
+            margin-left: -4px;
+            border-top-right-radius: 9px;
+            border-bottom-right-radius: 9px;
+        }
+
+       
+
+        
+        #nome{
+            color: black;
+            text-align: left;
+            margin-top: -10px;
+
+        }
+        .d1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            text-align: center;
+            font-weight: bolder;
+            padding: 15px;
+        }
+        #seta{
+            width: 200px;
+            margin-top:50px;
+            margin-left: 150px;
+        }
+        
+        .comeco{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            text-align: left;
+            font-size: 30px;
+            color: black;
+        }
+        #tech{
+            font-size: 70px;
+            margin-top: 0px;
+            font-family: 'Oswald';
+            text-align: center;
+            color: black;
+        }
+        #sou{
+           
+            color: black;
+        }
+        #senha{
+            display: block;
+            margin-top: 50px;
+            width: 700px;
+            height: 30px;
+            margin-left: 100px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: orange;
+        }
+
+        #email{
+            margin-top: 150px;
+            width: 700px;
+            height: 30px;
+            margin-left: 100px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: orange;
+            
+            
+        }
+        #botao{
+            width: 100px;
+            height: 30px;
+            margin-top: 90px;
+            margin-left: 105px;
+            border: none;
+            background-color: orange;
+            cursor: pointer;
+            font-weight: bolder;
+        
+        }
+
+        #criar{
+            margin-left: 400px;
+            margin-top: -28px;
+            font-family: 'Oswald';
+        }
+        a{
+            color: black;
+            font-family: 'Oswald';
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        #email::placeholder{
+            color: black;
+            font-weight: bolder;
+        }
+
+        #senha::placeholder{
+            color: black;
+            font-weight: bolder;
+        }
+
+        
+
+        
+        
+    </style>
+</head>
+<body>
+    <main>
+        <a href="index.html"><h1 id="nome">9Tech</h1></a>
+        <div id="div1">
+            <h1 id="tech">9Tech</h1>
+            <h2 class="comeco">LOG-IN</h2>
+            <H3 class="comeco" id="sou">Sou cliente</H3>
+            <p class="d1">Olá! Se você já comprou na loja da 9Tech antes, por favor, informe seu e-mail e senha.</p>
+        </div>
+        <div id="div2">
+            <div>
+                <form action="">
+                    <input type="email" placeholder="E-mail" id="email" required>
+                    <input type="password" name="" id="senha" placeholder="Senha" required>
+                    <input type="submit" value="Entrar" id="botao" onclick="entrar()">
+                </form>
+                <p id="criar">OU <a href="cadastro.html">criar conta</a></p>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        function entrar(){
+            var mail = document.getElementById("email")
+            var senha = document.getElementById("senha")
+            var infos = [mail.value, senha.value]
+        
+            
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro 9Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Righteous&display=swap');
+        
+       body{
+           background-color: lightgray;
+       } 
+        
+        main{
+            background-color: white;
+            height: 500px;
+            width: 1200px;
+            margin: auto;
+            margin-top: 140px;
+            padding: 10px;
+            border: 4px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        .inputs{
+            display: block;
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 400px;
+            height: 25px;
+            font-weight: bolder;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 2px;
+            border-style: solid;
+            border-color: orange;
+            
+        
+        }
+
+        #bloco2{
+            background-color: orange;
+            height: 150px;
+            width: 300px;
+            padding: 10px;
+            position: absolute;
+            margin-left: 750px;
+            margin-top: 80px;
+            border: 2px;
+            border-style: solid;
+            border-color: black;
+            
+        }
+
+        #cabecalho{
+            background-color: orange;
+            width: 1210px;
+            padding: 5px;
+            margin-top: -10px;
+            margin-left: -10px;
+            border-left: 0px;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 3px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        #texto{
+            text-align: center;
+            font-family: 'Oswald';
+        }
+
+        .cpfop{
+            display: block;
+            border: 2px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        #form{
+            margin-top: 30px;
+            position: absolute;
+        }
+
+
+        .inputs::placeholder{
+            color: black;
+        }
+
+       #select{
+           position: absolute;
+           margin-top: -15px;
+           width: 80px;
+           
+       }
+
+       #cpf{
+           width: 200px;
+           margin-top: 10px;
+       }
+
+       h3{
+           margin-top: 10px;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+
+
+       a{
+           text-decoration: none;
+           color: black;
+           
+       }
+
+       #tech{
+        font-family: 'Oswald';
+        font-size: 50px;
+        margin-top: -10px;
+       }
+
+       #cpf::placeholder{
+           color: black;
+           font-weight: bolder;
+       }
+
+       #submit{
+           position: absolute;
+           margin-left: 980px;
+           
+       }
+
+       #botao{
+           height: 30px;
+           width: 100px;
+           background-color: orange;
+           color: black;
+           border: none;
+           font-weight: bolder;
+           cursor: pointer;
+       }
+
+       .popup{
+           display: none;
+           position: absolute;
+           background-color: red;
+           width: 400px;
+           padding: 5px;
+           height: 200px;
+           margin-top: -330px;
+           margin-left: 750px;
+           border-radius:8px;
+           background-color: lightgray;
+           box-shadow: 0 0 1em black;
+           transition: 1s
+
+       }
+       #informacoesincorretas{
+           position: absolute;
+           text-align: center;
+           margin-top: 55px;
+           font-size: 30px;
+           color: black;
+       }
+
+       .infos{
+           display: block;
+       }
+       
+       .x{
+           position: absolute;
+           margin-left: 1120px;
+           margin-top: -343px;
+           width: 50px;
+           cursor: pointer;
+           
+       }
+       .xdiv{
+           display: none;
+       }
+
+       .xdivaparecer{
+           display: block;
+       }
+
+       #tech{
+        font-size: 40px;
+        font-family: 'Righteous';
+       }
+
+      
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="navcabe">
+                <p id="melhorloja">A melhor loja da Uni9</p>
+            </div>
+            <div id="linha2"></div>
+            <div id="cabeca"><a href="index.html" class="cabe" id="tech">9Tech</a> <img src="menu-regular-24 (2).png" alt="" class="cabe" id="menu" onclick="menu()">  <input type="text" placeholder="Pesquisar item" class="cabe" id="pesquisa" onclick="pesq()"> <a href="https://play.google.com/store?hl=pt_BR&gl=US" class="cabe">Baixe o app</a><a href="login.html" class="cabe">Conta</a> <a href="#"><img src="cart-solid-24.png" alt="" id="cart" onclick="carrinho()"></a></div>
+        </nav>
+        <div class="links">
+            <a href="#" class="linkk">Mais vendidos</a>
+            <a href="#" class="linkk">Ofertas especiasis</a>
+            <a href="#" class="linkk">Seja membro 9tech</a>
+            <a href="#" class="linkk">Contate-nos</a>
+        </div>
+        <div class="carrinhoitem">
+            <a href="#" class="clink">Meu carrinho</a>
+            <a href="#" class="clink">meus pedidos</a>
+        </div>
+    </header>
+    <main>
+        <div id="cabecalho">
+            <h1 id="texto">Cadastro 9Tech</h1>
+        </div>
+        <div id="principal">
+            <div id="form">
+                <form action="">
+                    <input type="text" placeholder="Nome completo" class="inputs" id="name" required>
+                    <input type="email" placeholder="E-mail" class="inputs" id="mail" required>
+                    <input type="email" placeholder="Confirme o email" class="inputs" id="confirmmail" required>
+                    <input type="password" placeholder="Crie uma senha" class="inputs" id="senha" required>
+                    <input type="password" placeholder="Confirme a senha" class="inputs" id="confirmsenha" required>
+                </form>
+                <div id="submit">
+                    <input type="submit" value="Cadastrar" id="botao" onclick="cadastrar()">
+                </div>
+
+            </div>
+            <div id="bloco2">
+                <input type="text" placeholder="CPF" id="cpf" class="cpfop">
+                <h3>sexo</h3>
+                <select name="sexo" id="select" class="cpfop">
+                    <option value="masc">masc</option>
+                    <option value="fem">fem</option>
+                    <option value="outro">outro</option>
+                </select>
+            </div>
+        </div>
+    </main>
+    <div class="popup">
+        <h3 id="informacoesincorretas">Informações incorretas tente novamente</h3>
+    </div>
+    <div id="xdiv" class="xdiv" onclick="x()">
+        <img src="x.png" alt="x" class="x">
+    </div>
+
+    <script>
+           
+
+            
+            function wronginfo(){
+                var info = document.querySelector(".popup")
+                var x = document.querySelector(".xdiv")
+                info.classList.add("infos")
+                x.classList.add("xdivaparecer")
+                
+                
+                
+            }
+        function cadastrar(){
+            var nome = document.getElementById("name")
+            var mail = document.getElementById("mail")
+            var coonfirmmail = document.getElementById("confirmmail")
+            var senha = document.getElementById("senha")
+            var confirmsenha = document.getElementById("confirmsenha")
+            var cpf = document.getElementById("cpf")
+            var sexo = document.getElementById("select")
+            var informacoes = [nome.value, mail.value, coonfirmmail.value, senha.value, confirmsenha.value, cpf.value, sexo.value]
+
+
+            if(mail.value != coonfirmmail.value || senha.value != confirmsenha.value || nome.value == "" || mail.value == "" || senha.value == ""){
+                //window.alert("confira as informacoes e tente denovo")
+                wronginfo()
+               
+            }else{
+                //window.alert(informacoes)
+            }
+        }
+
+        function x(){
+            var infos = document.querySelector(".popup")
+            var x = document.querySelector(".xdiv")
+            infos.classList.remove("infos")
+            x.classList.remove("xdivaparecer")
+        }
+    </script>
+
+</body>
+</html>
